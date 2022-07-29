@@ -1,0 +1,11 @@
+[Unit]
+Description=cameramode switch
+
+[Service]
+User=controller
+WorkingDirectory=/home/controller/.boot-scripts
+ExecStart=camswitch.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
